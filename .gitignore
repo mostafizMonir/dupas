@@ -1,1 +1,12 @@
 spl/email/mpdf/ttfonts/
+spl/email/mpdf/ttfontdata/
+spl/email/mpdf/collations/
+spl/email/mpdf/examples/
+spl/email/mpdf/font/
+spl/email/mpdf/graph_cache/
+spl/email/mpdf/includes/
+spl/email/mpdf/patterns/
+spl/email/mpdf/qrcode/
+spl/email/mpdf/vendor/
+spl/email/mpdf/utils/
+spl/email/mpdf/classes/

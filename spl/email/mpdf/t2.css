@@ -1,0 +1,132 @@
+div.w
+{
+      font-size: 13px;
+      padding-left: 100px;
+      width: 63%;
+      margin-left: 200px;
+      border-style: solid;
+      margin-top:10px;
+      margin-bottom: 80px;
+      padding-top:80px;
+      padding-bottom: 60px;
+     
+    
+}
+
+
+.column {
+  float: left;
+ 
+  height: 300px; 
+}
+
+.left
+ {
+  margin-top: -40px;    
+  width: 55%;
+  padding-top: 20px;
+  height:50px;
+  padding-left: 220px;
+  
+
+}
+
+.right 
+{
+  margin-top: -40px;
+
+  padding-top: 20px;
+  padding-left: 15px;
+  width: 40%;
+  height:90px;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.address
+{
+ 
+ height:200px;
+ padding-left: 20px;
+ padding-top: 30px;
+ width: 30%;
+
+ 
+
+}
+
+.image 
+{
+ padding-top: 50px;
+ padding-left: 70px;
+ width: 40%;
+
+
+}
+
+    
+   div.main1
+   {
+      
+     
+     
+      padding-top: 10px;
+   }
+   
+
+
+
+div.main2
+{
+  
+  
+   
+   padding-top: 25px;
+
+}
+
+div.main3
+{
+   text-indent: 40px;
+   
+   
+}
+
+
+div.signature1
+{
+    
+    margin-left:450px ;
+    padding-left:100px;
+}
+ 
+
+div.signature2
+{
+  
+    margin-left:450px ;
+    padding-left:90px;
+    text-indent: -5px;
+}
+ 
+
+.submit
+{
+  width: 20%;
+  padding-left:190px ;
+  margin-left:900px;
+  height:80px;
+  margin-top:-100px;
+  
+  
+}
+
+#search {
+  width: 5em;  height: 2.5em;
+}
