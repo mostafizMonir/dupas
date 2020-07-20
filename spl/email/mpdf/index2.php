@@ -35,7 +35,7 @@ class BanglaConverter {
 
 
 
-                      $conn=mysqli_connect("localhost","root","","letter");
+                      $conn=mysqli_connect("localhost","root","monmosndc","letter");
                       $sql="INSERT INTO letter_data(MemoNo,SendingDate,
                             Department,Year,Subject,StudyYear,ResponseDate,Type)
                             VALUES ('$memo','$new','$dept','$y','$sub','$yr','$y1','B')";

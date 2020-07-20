@@ -373,15 +373,15 @@
         <div id="collapse4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">You can:</h6>
-            <a class="collapse-item" href="createStaff.php"><i class="fas fa-user-check"></i>
+            <a class="collapse-item" href="../email/mpdf/Template1.php"><i class="fas fa-user-check"></i>
           <span>Exam Committee</span></a>
-          <a class="collapse-item" href="updateStaff.php"><i class="fas fa-user-edit"></i>
+          <a class="collapse-item" href="../email/email2/template2-view.php"><i class="fas fa-user-edit"></i>
           <span > Question Set</span></a>
-              <a class="collapse-item" href="updateStaff.php"><i class="fas fa-user-edit"></i>
+              <a class="collapse-item" href="../email/mpdf/Template3.php"><i class="fas fa-user-edit"></i>
           <span> Script Scrutinizers</span></a>
-              <a class="collapse-item" href="updateStaff.php"><i class="fas fa-user-edit"></i>
+              <a class="collapse-item" href="../email/mpdf/Template4.php"><i class="fas fa-user-edit"></i>
           <span> Viva Board Members</span></a>
-              <a class="collapse-item" href="updateStaff.php"><i class="fas fa-user-edit"></i>
+              <a class="collapse-item" href="../email/mpdf/Template5.php"><i class="fas fa-user-edit"></i>
           <span> Result Finaliser</span></a>
           </div>
         </div>
