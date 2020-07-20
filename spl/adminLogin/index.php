@@ -365,6 +365,28 @@
         </div>
       </li>
 
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse3">
+          <i class="fas fa-user-tie"></i>
+          <span>Send Email</span>
+        </a>
+        <div id="collapse4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">You can:</h6>
+            <a class="collapse-item" href="createStaff.php"><i class="fas fa-user-check"></i>
+          <span>Exam Committee</span></a>
+          <a class="collapse-item" href="updateStaff.php"><i class="fas fa-user-edit"></i>
+          <span > Question Set</span></a>
+              <a class="collapse-item" href="updateStaff.php"><i class="fas fa-user-edit"></i>
+          <span> Script Scrutinizers</span></a>
+              <a class="collapse-item" href="updateStaff.php"><i class="fas fa-user-edit"></i>
+          <span> Viva Board Members</span></a>
+              <a class="collapse-item" href="updateStaff.php"><i class="fas fa-user-edit"></i>
+          <span> Result Finaliser</span></a>
+          </div>
+        </div>
+      </li>
+
       
 
       <!-- Divider -->
