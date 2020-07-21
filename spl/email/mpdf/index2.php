@@ -1,3 +1,47 @@
+<input type="button" name="test" id="test" value="RUN" /><br/>
+
+<?php
+
+function testfun()
+{
+    echo "<script>alert('sadfas');</script>";
+}
+if(array_key_exists('test',$_POST)){
+    testfun();
+}
+?>
+
+<?php
+if(isset($_POST['send'])){
+    echo "<script>alert('sadfas');</script>";
+
+}
+// $attachment = new Swift_Attachment($content, 'filename.pdf', 'application/pdf');
+
+
+// Then, you can send PDF to the browser
+
+
+?>
+
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body>
+
+
+<iframe style="width: 1000px; height: 500px" src="../files/filename.pdf">
+</iframe>
+<form  method="post">
+<div class="row">
+    <button type="button" class="btn btn-primary" name="send" value="send">Send Mail</button>
+    <input type="submit"  value="send" name="send" id="search">
+    <button style="margin-left: 5px" class="btn btn-success" onclick="history.go(-1);">Back</button>
+</div>
+</form>
+</body>
+</html>
+
 <?php
 
 class BanglaConverter {
@@ -129,7 +173,7 @@ padding-left:50px;
 }
  </style>
 
-  <p> <img src=\"DhakaUniversity.jpg\" width=\"70\" height=\"90\"></p>
+  <p> <img src=\"../mpdf/DhakaUniversity.jpg\" width=\"70\" height=\"90\"></p>
   </div>
   
 </div>
@@ -291,9 +335,10 @@ height: 200px;
 
 
 $html = ob_get_contents();
-ob_end_clean(); 
-$mpdf->WriteHTML($html);
+ob_end_clean();
 
-$mpdf->Output();
+//$mpdf->WriteHTML($html);
+
+//$mpdf->Output();
 exit;
 ?>

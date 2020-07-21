@@ -90,7 +90,7 @@ $(document).ready(function(){
 
         
         <body>
-        <form action="index2.php" method="post">
+        <form action="../mpdf/index2.php" method="post">
         
         <div class="w">
        
@@ -109,7 +109,7 @@ $(document).ready(function(){
                     </div>
 
                     <div class="column image">
-                         <img src="DhakaUniversity.jpg" width="70" height="80">
+                         <img src="../mpdf/DhakaUniversity.jpg" width="70" height="80">
                     </div>
                 </div>
 
@@ -262,7 +262,7 @@ $(document).ready(function(){
          </div>
 
          <div class="submit">
-        <input type="submit"  value="Done" id="search">
+        <input type="submit"  value="Preview" id="search">
 
         </div>
          </form>           
