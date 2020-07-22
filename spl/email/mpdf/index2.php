@@ -1,26 +1,41 @@
-<input type="button" name="test" id="test" value="RUN" /><br/>
+<form method="post">
+    <input type="submit" name="test" id="test" value="RUN" /><br/>
+</form>
 
 <?php
 
 function testfun()
 {
-    echo "<script>alert('sadfas');</script>";
+    require_once '../../../spl/lib/vendor/autoload.php';
+
+
+    $transport = (new Swift_SmtpTransport('smtp.gmail.com',587,'tls'))
+        ->setUsername('monir.ndc.itdu@gmail.com')
+        ->setPassword('monmosndc')
+    ;
+
+
+    $mailer = new Swift_Mailer($transport);
+    $message = (new Swift_Message())
+        // Add subject
+        ->setSubject('Here should be a subject')
+
+        //Put the From address
+        ->setFrom(['monir.ndc.itdu@gmail.com'])
+
+        // Include several To addresses
+        ->setTo(['bit0211@iit.du.ac.bd']);
+
+    if($mailer->send($message)){
+        echo "mail send";
+    }
+
+
 }
+
 if(array_key_exists('test',$_POST)){
     testfun();
 }
-?>
-
-<?php
-if(isset($_POST['send'])){
-    echo "<script>alert('sadfas');</script>";
-
-}
-// $attachment = new Swift_Attachment($content, 'filename.pdf', 'application/pdf');
-
-
-// Then, you can send PDF to the browser
-
 
 ?>
 
