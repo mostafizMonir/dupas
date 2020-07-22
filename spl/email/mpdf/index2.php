@@ -26,9 +26,9 @@ function testfun()
         // Include several To addresses
         ->setTo(['bit0211@iit.du.ac.bd']);
 
-    if($mailer->send($message)){
+  /*  if($mailer->send($message)){
         echo "mail send";
-    }
+    }*/
 
 
 }
@@ -352,8 +352,8 @@ height: 200px;
 $html = ob_get_contents();
 ob_end_clean();
 
-//$mpdf->WriteHTML($html);
+$mpdf->WriteHTML($html);
 
-//$mpdf->Output();
+$mpdf->Output('../../email/files/filename.pdf','F');
 exit;
 ?>
