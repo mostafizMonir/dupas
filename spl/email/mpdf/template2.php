@@ -23,7 +23,23 @@
         <script>
 
 $(document).ready(function(){
+    $('#button').click(function() {
+        console.log('ok');
 
+        $.ajax({
+            type: "POST",
+            url: '../sendMail.php',
+            dataType: "json",
+            data: {name:'monir'},
+            success : function(data){
+                if (data.success == true){
+                    alert("Success: " +data.msg);
+                } else {
+                    alert("error: " +data.msg);
+                }
+            }
+        });
+    })
   
   $("#btn3").click(function(){
     $("#test3").val("<?php
@@ -262,7 +278,8 @@ $(document).ready(function(){
          </div>
 
          <div class="submit">
-        <input type="submit"  value="Preview" id="search">
+        <input type="submit" class="btn btn-primary" value="Send Mail" id="search">
+
 
         </div>
          </form>           
